@@ -8,7 +8,9 @@ Implementation of two approaches:
 1. [Greedy strategy](https://github.com/Fadeich/HotFlip-CNN-pytorch/blob/master/data_loader_hotflip_greedy.py)
 2. [Beam search](https://github.com/Fadeich/HotFlip-CNN-pytorch/blob/master/data_loader_hotflip_beam.py)
 
-For transferability comparison [DeepWordBug](https://github.com/QData/deepWordBug) algorithm with replace one strategy was implemented. 
+For **determinantal point processes** modification of HotFlip algorithm I used [Fast Greedy MAP Inference](https://github.com/laming-chen/fast-map-dpp).
+
+For **transferability** comparison [DeepWordBug](https://github.com/QData/deepWordBug) algorithm with replace one strategy was implemented. 
 It was improved using [local beam search strategy](https://github.com/Fadeich/HotFlip-CNN-pytorch/blob/master/locality_property_beam.ipynb): [DeepWordBug data_loader](https://github.com/Fadeich/HotFlip-CNN-pytorch/blob/master/data_loader_deepwordbug.py). 
 
 Usage examples are given in [test.ipynb](https://github.com/Fadeich/HotFlip-CNN-pytorch/blob/master/test.ipynb)
@@ -23,5 +25,6 @@ Models for experiments can be downloaded from [storage](https://yadi.sk/d/3IyeSi
 ## Reference
 * Xiang Zhang, Junbo Zhao, Yann LeCun. [Character-level Convolutional Networks for Text Classification](http://arxiv.org/abs/1509.01626). Advances in Neural Information Processing Systems 28 (NIPS 2015)
 * Ebrahimi, Javid, Anyi Rao, Daniel Lowd and Dejing Dou. “HotFlip: White-Box Adversarial Examples for Text Classification.” ACL (2018).
+* Chen, Laming, Guoxin Zhang and Eric Zhou. “Fast Greedy MAP Inference for Determinantal Point Process to Improve Recommendation Diversity.” NeurIPS (2018).
 * Gao, Ji, Jack Lanchantin, Mary Lou Soffa and Yanjun Qi. “Black-Box Generation of Adversarial Text Sequences to Evade Deep Learning Classifiers.” 2018 IEEE Security and Privacy Workshops (SPW) (2018): 50-56.
 * Judy Hoffman, Daniel A. Roberts, and Sho Yaida, "Robust Learning with Jacobian Regularization," 2019. [arxiv:1908.02729 [stat.ML]](https://arxiv.org/abs/1908.02729)
